@@ -1,0 +1,166 @@
+/*Estilos Gerais*/
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+/*Estilos para o primeiro título*/
+h1 {
+    background-color: #000d57;
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+
+/*Estilos para a barra de navegação*/
+nav ul {
+    background-color: #333;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    
+}
+/*Estilos para os itens de navegação*/
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+/*Estilos para os links de navegação*/
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    position: relative;
+       
+}
+/*Estilos para o efeito de hover nos links:*/
+nav a:hover {
+    background-color: rgb(69, 69, 71);
+}
+/*Adiciona uma Linha vertical branca ao Lado dos links*/
+nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px; /* Ajuste a posição da linha vertical conforme necessário */
+    width: 1px;
+    background-color: white;
+    display: none;
+}
+nav a:hover::before {
+    display: block;
+}
+/*Estilos para o conteúdo geral*/
+.conteudo {
+    display: none;
+    padding: 20px;
+    
+}
+/*Estilos para os formulários*/
+form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+/*Estilos para rótulos, campos de entrada e área de texto*/
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*Estilos para campos de entrada e área de texto*/
+input,
+textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Mostrar apenas a seção ativa */
+.conteudo:target {
+    display: block;
+}
+/* Estilos para sublinhar os segundo títulos */
+#contato h2 {
+    text-decoration: underline;
+    text-align:center;
+}
+#portfolio h2 {
+    text-decoration: underline;
+}
+#formacao h2 {
+    text-decoration: underline;
+}
+#sobre-mim h2 {
+    text-decoration: underline;
+}
+/* Manter menus selecionados*/
+.selecionado {
+    background-color: #3b3b3b;
+    color: #fff;
+}
+/*Cor de fundo inferior*/
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; 
+    background-color: #3b3b3b; 
+    z-index: -1; /* Coloca a cor de fundo inferior atrás do conteúdo da página */
+    background-size: cover;
+}
+/*Estilos para o botão enviar*/
+input[type="submit"] {
+    border: 1px solid 3b#3b3b3b; 
+    padding: 5px;
+    max-width: 100px;
+    margin: 0 auto;
+    background-color: white;
+}
+/*Estilos para as imagens ao lado do segundo títulos*/
+#sobre-mim img {
+    float: left; 
+    margin-right: 10px; 
+    width: 200px;
+}
+#formacao img {
+    float: left; 
+    margin-right: 10px; 
+    width: 200px;
+}
+#portfolio img {
+    float: left; 
+    margin-right: 20px; 
+    width: 200px;
+}
+/*Estilos para a imagem abaixo do botão enviar*/
+#contato img {
+    display: block; 
+    margin: 20px auto 0; 
+    max-width: 100px; 
+    height: auto; 
+}
+/*Cor de fundo do menu contato*/
+#contato {
+    background-color:darkgray;
+    min-height: 83vh; 
+    box-sizing: border-box; 
+    padding: 20px; 
+}
+
+
+
+
+
+

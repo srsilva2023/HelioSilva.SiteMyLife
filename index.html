@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY LIFE</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <!--Título 1; Nome do site-->
+        <h1>MY LIFE</h1>
+        <!--Listas dos menus superiores-->
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre-mim"class="selecionado">SOBRE MIM</a></li>
+                <li><a href="#formacao"class="selecionado">FORMAÇÃO E IDIOMAS</a></li>
+                <li><a href="#portfolio"class="selecionado">PORTFÓLIO</a></li>
+                <li><a href="#contato"class="selecionado">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Títulos e suas respectivas imagens-->
+    <!--Título 2-->
+    <section id="sobre-mim" class="conteudo">
+        <img src="Imagens/sobremim.img.png" alt="Imagem ao lado do título">
+        <h2>SOBRE MIM</h2>
+        Olá! Meu nome é Hélio, tenho 19 anos e sou um entusiasta da tecnologia. Adoro programar e criar soluções inovadoras para os desafios que encontro. Além disso, tenho uma paixão por design de interfaces e estou sempre procurando maneiras de tornar a experiência do usuário mais intuitiva e agradável. <br> <br> Em meu tempo livre, gosto de explorar novas tecnologias, ler sobre desenvolvimento de software e participar de hackathons e meetups de tecnologia. Também sou um grande fã de jogos eletrônicos e passo horas jogando com amigos e familiares. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer como profissional. Mal posso esperar para compartilhar minhas habilidades e contribuir para projetos empolgantes no futuro!
+    </section>
+<!--Título 2-->
+    <section id="formacao" class="conteudo">
+        <img src="Imagens/formação.img.png" alt="Imagem ao lado do título">
+        <h2>FORMAÇÃO E IDIOMAS</h2>
+        <p><strong>Formação:</strong> Completei o ensino médio na escola de referência estadual professora chaves de santana. Atualmente estou cursando o curso superior de Análise e Desenvolvimento de Sistemas na UNINTER. <br><br>
+        <strong>Idioma:</strong> Até o presente momento domino apenas o português e o básico de inglês e espanhol. Após conseguir dominar as outras duas línguas citadas, irá me permitir colaborar efetivamente em equipes internacionais e comunicar minhas ideias de forma clara e eficaz.</p>
+    </section>
+<!--Título 2-->
+    <section id="portfolio" class="conteudo">
+        <img src="Imagens/portfólio.img.png" alt="Imagem ao lado do título">
+        <h2>PORTFÓLIO</h2>
+        <p>Aqui estão alguns links dos meus projetos mais recentes:</p>
+        <!--Links em listas dos projetos desenvolvidos em aulas práticas-->
+        <ul> 
+            <li><a href="https://srsilva2023.github.io/Cats/" style="text-decoration: none; color: inherit" target="_blank"><strong>Projeto I:</strong> Site sobre gatos desenvolvido em aulas práticas.</a></li>
+            <li><a href=" https://srsilva2023.github.io/CodigosAulas/" style="text-decoration: none; color: inherit" target="_blank"><strong>Projeto II:</strong> Site com os códigos aprendidos nas aulas práticas.</a></li>
+            <li><a href="https://srsilva2023.github.io/CardapioPizzas/" style="text-decoration: none; color: inherit" target="_blank"><strong>Projeto III:</strong> Site sobre um cardápio de pizzas desenvolvido em aulas práticas.</a></li>
+        </ul>
+    </section>
+<!--Título 2-->
+    <section id="contato" class="conteudo">
+        <h2>CONTATO</h2>
+        <!--Formulários para o envio de mensagens-->
+        <form>
+            <label for="nome">NOME:</label>
+            <input type="text" id="nome" name="nome"><br>
+
+            <label for="email">E-MAIL:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="mensagem">MENSAGEM:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="ENVIAR">
+        </form>
+        <img src="Imagens/contato.img.png" alt="Imagem abaixo do botão enviar">
+    </section>
+    <!--Manter os menus selecionados-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('.menu a');
+    
+            links.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    links.forEach(function(link) {
+                        link.classList.remove('selecionado');
+                    });
+                    this.classList.add('selecionado');
+                });
+            });
+        });
+    </script>
+   
+</body>
+</html>
